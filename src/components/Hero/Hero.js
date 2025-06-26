@@ -82,7 +82,7 @@ function Hero() {
         </div>
         <div className="hero-image">
           <img
-                src={`${process.env.PUBLIC_URL}/images/Hero-image.png`}
+                src={`${process.env.PUBLIC_URL}/images/Hero-Image.png`}
                 alt="Hero"
                 className="hee"
                 style={{ width: "230px", height: "230px", borderRadius: "12px" }}
