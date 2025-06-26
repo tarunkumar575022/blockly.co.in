@@ -1,0 +1,40 @@
+.about-section {
+  position: relative;
+  padding: 3rem 1rem;
+  background: transparent;
+}
+
+.highlight-box {
+  display: inline-block;
+  background: var(--accent);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: black;
+}
+
+.hand {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 170px;
+  height: 100px;
+  transform: rotate(90deg);
+}
+.description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  width: 50%;               /* Or any desired width */
+  margin: 0 auto;           /* Centers it horizontally */
+  border: none;
+  border-top: 2px solid black;
+}

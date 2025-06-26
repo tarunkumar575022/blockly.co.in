@@ -1,0 +1,116 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  margin-left: 10px;
+  margin-right: 10px
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.font {
+  color: black
+}
+
+/* Default light theme (from :root) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --nav-bg-color: #ffffff;
+  --nav-text-color: #000000;
+}
+
+/* Dark mode overrides */
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --nav-bg-color: #1f1f1f;
+  --nav-text-color: #ffffff;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+  background-color: var(--nav-bg-color);
+  color: var(--nav-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--nav-text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--nav-text-color);
+}
+
+/* Navbar.css */
+
+/* 1. Global theme variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --nav-bg-color: #ffffff;
+  --nav-text-color: #000000;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --nav-bg-color: #1f1f1f;
+  --nav-text-color: #ffffff;
+}
+
+/* 2. Apply those variables globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: sans-serif;
+}
